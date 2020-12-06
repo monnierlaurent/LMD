@@ -1,0 +1,149 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/08.jpg");
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.display-none {
+    display: none;
+}
+
+
+/*------header------*/
+
+.header_logo_size {
+    width: 11%;
+    padding: 1em;
+}
+
+.header_fex_style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: solid #d24623 0.2em;
+    border-bottom: solid#D24623 0.2em;
+    color: white;
+    background: rgb(27, 26, 26);
+}
+
+.header_div_flex--style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_lien--style {
+    color: white;
+    padding-right: 2em;
+    font-size: 1.5em;
+}
+
+
+/*-----main------*/
+
+.main--flex--style {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding-top: 2.5em;
+}
+
+
+/*-----footer-----*/
+
+.footer_logo_size {
+    width: 3%;
+    height: auto;
+}
+
+.footer_logo--flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer--flex--style {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(27, 26, 26);
+    border-top: solid #d24623 0.1em;
+    border-bottom: solid #d24623 0.1em;
+    color: white;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_heading--padding {
+    padding: 1em;
+}
+
+.footer__liste--flex-style {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer_li--style {
+    padding-bottom: 0.5em;
+}
+
+.footer_lien--style {
+    color: white;
+}
+
+
+/*-----page contact----*/
+
+.main_contact--flex--style {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding-top: 2.5em;
+}
+
+.main_contact--flex {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 1.5em;
+}
+
+input {
+    margin-bottom: 1.5em;
+}
+
+
+/*hover*/
+
+.hover:hover {
+    cursor: pointer;
+    color: #d24623;
+}
+
+
+/*active*/
+
+.hover:active {
+    color: gray;
+}
