@@ -25,17 +25,24 @@
     <main class="main_contact--flex--style">
 
         <form class="main_contact--flex">
-            <label for="">Nom :</label>
-            <input type="text" id="nom">
+            <label class="main_contact_label--style" for="">Nom :</label>
+            <input class="main_contact_input--style" type="text" id="nom" placeholder="Votre nom...">
+            <p id="message_nom">*champ obligatoire</p>
 
-            <label for="Prenom">Prenom :</label>
-            <input type="text" id="prenom">
+            <label class="main_contact_label--style" for="Prenom">Prenom :</label>
+            <input class="main_contact_input--style" type="text" id="prenom" placeholder="Votre prenom...">
+            <p id="message_prenom">*champ obligatoire</p>
 
-            <label for="email">Email :</label>
-            <input type="email" id="email">
+            <label class="main_contact_label--style" for="email">Email :</label>
+            <input class="main_contact_input--style" type="email" id="email" placeholder="Votre adresse email...">
+            <p id="message_email">*champ obligatoire</p>
 
-            <label for="message">votre message :</label>
-            <textarea id="message" name="" id="" cols="30" rows="10"></textarea>
+            <label class="main_contact_label--style" for="message">votre message :</label>
+            <textarea class="main_contact_text--style" id="message" name="" id="" cols="30" rows="10" placeholder="Votre message..."></textarea>
+            <p id="message_message">*champ obligatoire</p>
+
+            <button class="main_contact_btn_form--style">Envoyer</button>
+            <p id="message_global">*champ obligatoire</p>
         </form>
 
     </main>
