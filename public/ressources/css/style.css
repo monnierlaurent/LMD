@@ -1,5 +1,8 @@
 html {
-    --rouge: ;
+    --rouge: #ff0000;
+    --orange: #d24623;
+    --blanc: #ffffff;
+    --gris: #727272;
 }
 
 body {
@@ -8,6 +11,10 @@ body {
     padding: 0;
     background-image: url("../images/08.jpg");
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 a {
@@ -32,9 +39,9 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border-top: solid #d24623 0.2em;
-    border-bottom: solid#D24623 0.2em;
-    color: white;
+    border-top: solid var(--orange)0.2em;
+    border-bottom: solid var(--orange) 0.2em;
+    color: var(--blanc);
     background: rgb(27, 26, 26);
 }
 
@@ -44,9 +51,15 @@ a {
     align-items: center;
 }
 
+.header_lien--flex {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .header_lien--style {
-    color: white;
-    padding-right: 2em;
+    color: var(--blanc);
     font-size: 1.5em;
 }
 
@@ -55,9 +68,61 @@ a {
 
 .main--flex--style {
     width: 100%;
-    color: rgb(255, 255, 255);
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanc);
     padding-top: 2.5em;
 }
+
+.main_h2--style {
+    font-size: 2em;
+}
+
+.main_div--flex--style {
+    width: 33%;
+}
+
+.main_div1--flex--style {
+    width: 33%;
+    padding: 0 0 0 2em;
+    font-size: 1.7em;
+}
+
+.main_p--style {
+    padding-bottom: 0.5em;
+}
+
+
+/*animation d'apparition de 'qui nous sommes*/
+
+.main_article--flex--style {
+    position: fixed;
+    width: 30%;
+    /*top: 16em;*/
+    height: auto;
+    transform: translatey(-30em);
+    border: solid 1px var(--orange);
+    padding: 0.5em;
+    z-index: -1;
+    animation: scroll 1s forwards;
+}
+
+@keyframes scroll {
+    from {
+        transform: translatey(-40em);
+        /*transform: scale(0) rotate(0deg);*/
+    }
+    to {
+        transform: translatey(-3em);
+        /*transform: scale(1) rotate(360deg);*/
+    }
+}
+
+
+/*---------------------------------------------*/
 
 
 /*-----footer-----*/
@@ -80,9 +145,9 @@ a {
     bottom: 0;
     left: 0;
     background-color: rgb(27, 26, 26);
-    border-top: solid #d24623 0.1em;
-    border-bottom: solid #d24623 0.1em;
-    color: white;
+    border-top: solid var(--orange) 0.1em;
+    border-bottom: solid var(--orange) 0.1em;
+    color: var(--blanc);
     font-size: 1.5em;
     font-family: sans-serif;
     display: flex;
@@ -107,7 +172,15 @@ a {
 }
 
 .footer_lien--style {
-    color: white;
+    color: var(--blanc);
+}
+
+.footer_i--flex {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1em;
 }
 
 
@@ -119,7 +192,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: var(--blanc);
     padding-top: 2.5em;
 }
 
@@ -141,7 +214,7 @@ a {
 }
 
 .main_contact_btn_form--style {
-    background-color: #d24623;
+    background-color: var(--orange);
     padding: 0.3em;
     font-size: 1.2em;
     border-radius: 5px;
@@ -159,12 +232,12 @@ a {
 
 .hover:hover {
     cursor: pointer;
-    color: #d24623;
+    color: var(--orange);
 }
 
 
 /*active*/
 
 .hover:active {
-    color: gray;
+    color: var(--gris);
 }
