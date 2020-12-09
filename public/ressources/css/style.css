@@ -97,7 +97,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     padding: 0 0 0 2em;
-    font-size: 1.7em;
+    font-size: 1.2em;
 }
 
 .main_div2--flex--style {
@@ -230,26 +230,26 @@ a {
 }
 
 .main_contact_label--style {
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: 5px;
 }
 
 .main_contact_input--style {
     padding: 0.3em;
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: 5px;
 }
 
 .main_contact_btn_form--style {
     background-color: var(--orange);
     padding: 0.3em;
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: 5px;
 }
 
 .main_contact_text--style {
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: sans-serif;
     padding: 0.5em;
 }
