@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="header_fex_style">
+    <header class="header_flex_style">
 
         <div class="header_div_flex--style">
             <img class="header_logo_size" src="./public/ressources/images/lolo_4.png" alt="Logo de la sociétée" />
@@ -19,8 +19,14 @@
         </div>
 
         <nav class="header_lien--flex">
-            <a class="header_lien--style hover" href="./creation.html">Nos créations</a>
-            <a class="header_lien--style hover" href="./contact.html">Contactez-nous</a>
+
+            <div class="header__nav__div--flex--style">
+                <a class="header_lien--style hover" href="./creation.html">Nos créations</a>
+            </div>
+
+            <div class="header__nav__div--flex--style">
+                <a class="header_lien--style hover" href="./contact.html">Contactez-nous</a>
+            </div>
 
         </nav>
     </header>
@@ -28,14 +34,34 @@
     <main class="main--flex--style">
 
         <div class="main_div1--flex--style">
-            <p id="parag_1" class="main_p--style hover">Qui sommes nous</p>
-            <p id="parag_2" class="main_p--style hover">Technologie utilisée</p>
-            <p id="parag_3" class="main_p--style hover">Hebergement utilisé</p>
-            <p id="parag_4" class="main_p--style hover">Nos créations</p>
+
+            <div id="border1" class="main__div__p--style border--style-1">
+                <p id="parag_1" class="main_p--style ">Qui sommes nous</p>
+            </div>
+
+            <div id="border2" class="main__div__p--style border--style">
+                <p id="parag_1" class="main_p--style ">Nos prestations</p>
+            </div>
+
+            <div id="border3" class="main__div__p--style">
+                <p id="parag_2" class="main_p--style">Nos créations</p>
+            </div>
+
+            <div id="border4" class="main__div__p--style">
+                <p id="parag_4" class="main_p--style">Technologies utilisées</p>
+            </div>
+
+            <div id="border5" class="main__div__p--style border--style">
+                <p id="parag_5" class="main_p--style">Hebergement utilisé</p>
+            </div>
+            <div id="border6" class="main__div__p--style border--style-2">
+                <p id="parag_6" class="main_p--style">Nous contacter</p>
+            </div>
+
         </div>
 
 
-        <div class="main_div2--flex--style">
+        <!--    <div class="main_div2--flex--style">
 
 
             <article id="article_1" class="main_article--flex--style">
@@ -74,7 +100,7 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti dicta omnis illo ducimus iste iure magnam harum, consectetur porro vel odio doloribus ullam, illum totam minus. Corrupti, vero excepturi.</p>
             </article>
 
-        </div>
+        </div> -->
 
         <div class="main_div--flex--style">
 
@@ -118,5 +144,6 @@
 </body>
 
 <script src="./public/ressources/js/app.js"></script>
+
 
 </html>

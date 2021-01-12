@@ -10,15 +10,11 @@ const article3 = document.getElementById('article_img_3');
 btnSuivant1.addEventListener('click', (event) => {
 
     article1.setAttribute('class', 'display-none');
-
     article2.setAttribute('class', 'amin_2 main_creation_article--seize--flex');
-
 });
 
 btnSuivant2.addEventListener('click', (event) => {
 
     article2.setAttribute('class', 'display-none');
-
     article3.setAttribute('class', 'amin_2 main_creation_article--seize--flex');
-
 });

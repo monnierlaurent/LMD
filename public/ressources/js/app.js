@@ -16,7 +16,7 @@ displayFooter = () => {
     });
 };
 
-displayFooter();
+//displayFooter();
 
 displayArticle = () => {
     const parag1 = document.getElementById('parag_1');
@@ -81,24 +81,86 @@ displayArticle = () => {
         }
     });
 };
-displayArticle();
+//displayArticle();
 
-validFormContact = () => {
-    //---récuperation des champs du formulaire---//
-    const nom = document.getElementById('nom');
-    const prenom = document.getElementById('prenom');
-    const email = document.getElementById('email');
-    const message = document.getElementById('message');
 
-    //---récuperation des messages du formulaire---//
-    const messageNom = document.getElementById('message_nom');
-    const messagePrenom = document.getElementById('message_prenom');
-    const messageEmail = document.getElementById('message_email');
-    const messageMessage = document.getElementById('message_message');
-    const messageGlobal = document.getElementById('message_global');
+const divBorder1 = document.getElementById('border1');
+const divBorder2 = document.getElementById('border2');
+const divBorder3 = document.getElementById('border3');
+const divBorder4 = document.getElementById('border4');
+const divBorder5 = document.getElementById('border5');
+const divBorder6 = document.getElementById('border6');
 
-    //---création des regex---//
+divBorder1.addEventListener('mouseover', event => {
 
-    //---logique de validation---//
+    divBorder2.setAttribute('class', 'main__div__p--style border__radius--top');
 
-};
+    divBorder1.addEventListener('mouseout', event => {
+        divBorder2.setAttribute('class', 'main__div__p--style');
+        divBorder1.setAttribute('class', 'main__div__p--style border--style-1');
+    });
+});
+
+divBorder2.addEventListener('mouseover', event => {
+
+    divBorder1.setAttribute('class', 'main__div__p--style border__radius--bottom--div1');
+    divBorder3.setAttribute('class', 'main__div__p--style border__radius--top');
+
+    divBorder2.addEventListener('mouseout', event => {
+
+        divBorder1.setAttribute('class', 'main__div__p--style border--style-1');
+        divBorder3.setAttribute('class', 'main__div__p--style');
+
+    });
+});
+
+divBorder3.addEventListener('mouseover', event => {
+
+    divBorder2.setAttribute('class', 'main__div__p--style border__radius--bottom');
+    divBorder4.setAttribute('class', 'main__div__p--style border__radius--top');
+
+    divBorder3.addEventListener('mouseout', event => {
+
+        divBorder2.setAttribute('class', 'main__div__p--style');
+        divBorder4.setAttribute('class', 'main__div__p--style border--style');
+    });
+});
+
+divBorder4.addEventListener('mouseover', event => {
+
+    divBorder3.setAttribute('class', 'main__div__p--style border__radius--bottom');
+    divBorder5.setAttribute('class', 'main__div__p--style border__radius--top');
+
+    divBorder4.addEventListener('mouseout', event => {
+
+        divBorder3.setAttribute('class', 'main__div__p--style');
+        divBorder4.setAttribute('class', 'main__div__p--style border--style');
+        divBorder5.setAttribute('class', 'main__div__p--style border--style');
+    });
+});
+
+divBorder5.addEventListener('mouseover', event => {
+
+    divBorder4.setAttribute('class', 'main__div__p--style border__radius--bottom');
+    divBorder6.setAttribute('class', 'main__div__p--style border__radius--top--div2');
+
+    divBorder5.addEventListener('mouseout', event => {
+
+
+        divBorder4.setAttribute('class', 'main__div__p--style border--style');
+        divBorder6.setAttribute('class', 'main__div__p--style border--style-2');
+    });
+});
+
+divBorder6.addEventListener('mouseover', event => {
+
+    divBorder5.setAttribute('class', 'main__div__p--style border__radius--bottom');
+
+
+    divBorder6.addEventListener('mouseout', event => {
+
+
+        divBorder5.setAttribute('class', 'main__div__p--style border--style');
+        divBorder6.setAttribute('class', 'main__div__p--style border--style-2');
+    });
+});
