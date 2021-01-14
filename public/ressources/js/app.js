@@ -1,95 +1,9 @@
-displayFooter = () => {
-    const btnFooter = document.getElementById('btn_footer');
-    const footer = document.getElementById('footer_1');
-
-    btnFooter.addEventListener('click', (event) => {
-
-        event.preventDefault();
-
-        if (footer.className === 'display-none') {
-
-            footer.setAttribute('class', 'footer__liste--flex-style');
-        } else {
-            footer.setAttribute('class', 'display-none');
-
-        };
-    });
-};
-
-//displayFooter();
-
-displayArticle = () => {
-    const parag1 = document.getElementById('parag_1');
-    const parag2 = document.getElementById('parag_2');
-    const parag3 = document.getElementById('parag_3');
-    const parag4 = document.getElementById('parag_4');
-
-    const article1 = document.getElementById('article_1');
-    const article2 = document.getElementById('article_2');
-    const article3 = document.getElementById('article_3');
-    const article4 = document.getElementById('article_4');
-
-    parag1.addEventListener('click', (event) => {
-        event.preventDefault();
-
-        if (article1.className === 'display-none') {
-            article1.setAttribute('class', 'main_article--flex--style');
-            article2.setAttribute('class', 'display-none');
-            article3.setAttribute('class', 'display-none');
-            article4.setAttribute('class', 'display-none');
-        } else {
-            article1.setAttribute('class', 'display-none');
-        }
-    });
-
-    parag2.addEventListener('click', (event) => {
-        event.preventDefault();
-
-        if (article2.className === 'display-none') {
-            article1.setAttribute('class', 'display-none');
-            article2.setAttribute('class', 'main_article--flex--style');
-            article3.setAttribute('class', 'display-none');
-            article4.setAttribute('class', 'display-none');
-        } else {
-            article2.setAttribute('class', 'display-none');
-        }
-    });
-
-    parag3.addEventListener('click', (event) => {
-        event.preventDefault();
-
-        if (article3.className === 'display-none') {
-            article1.setAttribute('class', 'display-none');
-            article2.setAttribute('class', 'display-none');
-            article3.setAttribute('class', 'main_article--flex--style');
-            article4.setAttribute('class', 'display-none');
-        } else {
-            article3.setAttribute('class', 'display-none');
-        }
-    });
-
-    parag4.addEventListener('click', (event) => {
-        event.preventDefault();
-
-        if (article4.className === 'display-none') {
-            article1.setAttribute('class', 'display-none');
-            article2.setAttribute('class', 'display-none');
-            article3.setAttribute('class', 'display-none');
-            article4.setAttribute('class', 'main_article--flex--style');
-        } else {
-            article4.setAttribute('class', 'display-none');
-        }
-    });
-};
-//displayArticle();
-
-
-const divBorder1 = document.getElementById('border1');
-const divBorder2 = document.getElementById('border2');
-const divBorder3 = document.getElementById('border3');
-const divBorder4 = document.getElementById('border4');
-const divBorder5 = document.getElementById('border5');
-const divBorder6 = document.getElementById('border6');
+const divBorder1 = document.getElementById('border_1');
+const divBorder2 = document.getElementById('border_2');
+const divBorder3 = document.getElementById('border_3');
+const divBorder4 = document.getElementById('border_4');
+const divBorder5 = document.getElementById('border_5');
+const divBorder6 = document.getElementById('border_6');
 
 divBorder1.addEventListener('mouseover', event => {
 
@@ -146,7 +60,6 @@ divBorder5.addEventListener('mouseover', event => {
 
     divBorder5.addEventListener('mouseout', event => {
 
-
         divBorder4.setAttribute('class', 'main__div__p--style border--style');
         divBorder6.setAttribute('class', 'main__div__p--style border--style-2');
     });
@@ -156,11 +69,173 @@ divBorder6.addEventListener('mouseover', event => {
 
     divBorder5.setAttribute('class', 'main__div__p--style border__radius--bottom');
 
-
     divBorder6.addEventListener('mouseout', event => {
-
 
         divBorder5.setAttribute('class', 'main__div__p--style border--style');
         divBorder6.setAttribute('class', 'main__div__p--style border--style-2');
     });
+});
+
+const parag1 = document.getElementById('border_1');
+const parag2 = document.getElementById('border_2');
+const parag3 = document.getElementById('border_3');
+const parag4 = document.getElementById('border_4');
+
+
+const div0 = document.getElementById('div_0');
+const div1 = document.getElementById('div_1');
+const div2 = document.getElementById('div_2');
+const div3 = document.getElementById('div_3');
+const div4 = document.getElementById('div_4');
+
+
+const crossHide1 = document.getElementById('cross_hide_1');
+const crossHide2 = document.getElementById('cross_hide_2');
+const crossHide3 = document.getElementById('cross_hide_3');
+const crossHide4 = document.getElementById('cross_hide_4');
+
+
+//div  main_div2--flex--style
+
+//display-none
+
+// animation_display  animation_hide
+
+parag1.addEventListener('click', (event) => {
+
+    if (div1.className === ('main_div2--flex--style animation_display')) {
+
+        div1.setAttribute('class', 'main_div2--flex--style animation_hide');
+
+        setTimeout(() => {
+            div1.setAttribute('class', 'display-none');
+        }, 200);
+    } else {
+        div0.setAttribute('class', 'display-none');
+        div1.setAttribute('class', 'main_div2--flex--style animation_display');
+        div2.setAttribute('class', 'display-none');
+        div3.setAttribute('class', 'display-none');
+        div4.setAttribute('class', 'display-none');
+
+
+    };
+    crossHide1.addEventListener('click', (event) => {
+
+        div0.setAttribute('class', 'display-none');
+        div1.setAttribute('class', 'main_div2--flex--style animation_hide');
+        div2.setAttribute('class', 'display-none');
+        div3.setAttribute('class', 'display-none');
+        div4.setAttribute('class', 'display-none');
+
+
+        setTimeout(() => {
+            div1.setAttribute('class', 'display-none');
+        }, 200);
+    });
+
+});
+
+parag2.addEventListener('click', (event) => {
+
+    if (div2.className === ('main_div2--flex--style animation_display')) {
+
+
+        div2.setAttribute('class', 'main_div2--flex--style animation_hide');
+
+        setTimeout(() => {
+            div2.setAttribute('class', 'display-none');
+        }, 200);
+
+    } else {
+
+        div0.setAttribute('class', 'display-none');
+        div1.setAttribute('class', 'display-none');
+        div2.setAttribute('class', 'main_div2--flex--style animation_display');
+        div3.setAttribute('class', 'display-none');
+        div4.setAttribute('class', 'display-none');
+    };
+
+    crossHide2.addEventListener('click', (event) => {
+
+        div0.setAttribute('class', 'display-none');
+        div1.setAttribute('class', 'display-none');
+        div2.setAttribute('class', 'main_div2--flex--style animation_hide');
+        div3.setAttribute('class', 'display-none');
+        div4.setAttribute('class', 'display-none');
+
+        setTimeout(() => {
+            div2.setAttribute('class', 'display-none');
+        }, 200);
+    });
+
+});
+
+parag3.addEventListener('click', (event) => {
+
+    if (div3.className === ('main_div2--flex--style animation_display')) {
+
+
+        div3.setAttribute('class', 'main_div2--flex--style animation_hide');
+
+        setTimeout(() => {
+            div2.setAttribute('class', 'display-none');
+        }, 200);
+
+    } else {
+
+        div0.setAttribute('class', 'display-none');
+        div1.setAttribute('class', 'display-none');
+        div2.setAttribute('class', 'display-none');
+        div3.setAttribute('class', 'main_div2--flex--style animation_display');
+        div4.setAttribute('class', 'display-none');
+    };
+
+    crossHide3.addEventListener('click', (event) => {
+
+        div0.setAttribute('class', 'display-none');
+        div1.setAttribute('class', 'display-none');
+        div2.setAttribute('class', 'display-none');
+        div3.setAttribute('class', 'main_div2--flex--style animation_hide');
+        div4.setAttribute('class', 'display-none');
+
+        setTimeout(() => {
+            div3.setAttribute('class', 'display-none');
+        }, 200);
+    });
+
+});
+
+parag4.addEventListener('click', (event) => {
+
+    if (div4.className === ('main_div2--flex--style animation_display')) {
+
+
+        div4.setAttribute('class', 'main_div2--flex--style animation_hide');
+
+        setTimeout(() => {
+            div4.setAttribute('class', 'display-none');
+        }, 200);
+
+    } else {
+
+        div0.setAttribute('class', 'display-none');
+        div1.setAttribute('class', 'display-none');
+        div2.setAttribute('class', 'display-none');
+        div3.setAttribute('class', 'display-none');
+        div4.setAttribute('class', 'main_div2--flex--style animation_display');
+    };
+
+    crossHide4.addEventListener('click', (event) => {
+
+        div0.setAttribute('class', 'display-none');
+        div1.setAttribute('class', 'display-none');
+        div2.setAttribute('class', 'display-none');
+        div3.setAttribute('class', 'display-none');
+        div4.setAttribute('class', 'main_div2--flex--style animation_hide');
+
+        setTimeout(() => {
+            div4.setAttribute('class', 'display-none');
+        }, 200);
+    });
+
 });
